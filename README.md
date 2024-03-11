@@ -20,17 +20,46 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Practicum Report
 
-To learn more about Next.js, take a look at the following resources:
+|  | Framework Based Programming 2024 |
+|--|--|
+| NIM |  2141720067|
+| Nama |  Saefulloh Fatah Putra Kyranna |
+| Kelas | TI - 3I |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Practicum 1
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In this practicum, we will learn about how to make event handler from components. This is done to respond to whatever input the user made on the website. To do this, we will make a component first before adding an event to the component. 
 
-## Deploy on Vercel
+``````
+export default function Button_01(){
+    //function for clicking the button
+    function handleClick(){
+        alert("The button is pressed!!");
+    }
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    function handleMouseOver(){
+        alert("Please press the button");
+    }
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    return (
+        <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded"
+            onClick={handleClick}
+            // onMouseOver={handleMouseOver}
+            onMouseLeave={() => {
+                    alert("Leaving so soon?")
+                }
+            }
+        >
+            This is a button
+        </button>
+    );
+}
+``````
+
+After creating the component, we will import and call it from the ``page.tsx`` file 
+
+Output: 
+
+![Screenshot](assets/01.png)
