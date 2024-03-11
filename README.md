@@ -30,7 +30,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Practicum 1
 
-In this practicum, we will learn about how to make event handler from components. This is done to respond to whatever input the user made on the website. To do this, we will make a component first before adding an event to the component. 
+In this practicum, we have learnt about how to make event handler from components. This is done to respond to whatever input the user made on the website. To do this, we will make a component first before adding an event to the component. 
 
 ``````
 export default function Button_01(){
@@ -72,7 +72,7 @@ As we can see with the output, there is a button which will return an alert if c
 
 ## Practicum 2
 
-In this practicum, we will learn about how to make a dynamic event handler. This is done to make the website more adaptable to various requirement. However, during the course of this practicum, we encountered some errors in the code. 
+In this practicum, we have learnt about how to make a dynamic event handler. This is done to make the website more adaptable to various requirement. However, during the course of this practicum, we encountered some errors in the code. 
 
 ![Screenshot](assets/04.png)
 
@@ -83,3 +83,26 @@ Output:
 ![Screenshot](assets/06.png)
 
 ![Screenshot](assets/05.png)
+
+## Practicum 3
+
+In this practicum, we have learnt about event propagation. This event happens because event handler will catch any event from any child that are owned by parent component. The demonstration of this event propagation is displayed on the output. 
+
+Output: 
+
+![Screenshot](assets/07.png)
+
+![Screenshot](assets/08.png)
+
+![Screenshot](assets/09.png)
+
+As we can see, the button returns the alert of parent element when pressed. This is because event handler also catches the parent component and display it along with the child component. To stop this, we can stop event propagation by inserting the code into the component. 
+
+``````
+ onClick={(e) => {
+                e.stopPropagation();
+                alert(message)
+                }
+            }>
+``````
+
