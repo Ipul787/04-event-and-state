@@ -58,8 +58,28 @@ export default function Button_01(){
 }
 ``````
 
-After creating the component, we will import and call it from the ``page.tsx`` file 
+After creating the component, we will import and call it from the ``page.tsx`` file. 
 
 Output: 
 
 ![Screenshot](assets/01.png)
+
+As we can see with the output, there is a button which will return an alert if clicked. 
+
+![Screenshot](assets/02.png)
+
+![Screenshot](assets/03.png)
+
+## Practicum 2
+
+In this practicum, we will learn about how to make a dynamic event handler. This is done to make the website more adaptable to various requirement. However, during the course of this practicum, we encountered some errors in the code. 
+
+![Screenshot](assets/04.png)
+
+This error happens because we have not defined the message and button name yet, therefore the ``button.tsx`` file returns an error. However, after we define the name of the button and the message, the website works as intended. 
+
+Output: 
+
+![Screenshot](assets/06.png)
+
+![Screenshot](assets/05.png)
