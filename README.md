@@ -106,3 +106,4 @@ As we can see, the button returns the alert of parent element when pressed. This
             }>
 ``````
 
+By entering this code, the event handler will not call the parent component once the event was executed. 
