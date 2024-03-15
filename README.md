@@ -107,3 +107,30 @@ As we can see, the button returns the alert of parent element when pressed. This
 ``````
 
 By entering this code, the event handler will not call the parent component once the event was executed. 
+
+## Practicum 4
+
+In this practicum, we have learnt about the use of state to change the website display based on user input. This method is useful to display various items from a list. 
+
+Output: 
+
+![Screenshot](assets/10.png)
+
+When we run the code, it worked smoothly until we run out articles. In that case, the system returns a runtime error. We could fix this by adding a conditional statement on handleClick function that will set the index to 0 if the pointer reaches the end of the list. 
+
+``````
+function handleClick() {
+    if (index < sculptureList.length - 1) {
+        setIndex(index + 1);  // counter index + 1, utk melihat data selanjutnya
+    } else {
+        // Reset index ke 0 untuk kembali ke awal
+        setIndex(0);
+    }
+}
+``````
+
+With previous article button: 
+
+![Screenshot](assets/11.png)
+
+![Screenshot](assets/12.png)

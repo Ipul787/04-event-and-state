@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button_01, {Button_02, Button_03} from "./component/button";
+import Gallery from "./component/gallery";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <Button_03 message="Child Element : Button_01" buttonName="Button_01" />
         <Button_03 message="Child Element : Button_02" buttonName="Button_02" />
       </div>
+      <br></br>
+      <Gallery />
     </>
   );
 }
