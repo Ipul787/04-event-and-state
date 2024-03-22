@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Button_01, {Button_02, Button_03} from "./component/button";
 import Gallery from "./component/gallery";
+import Form, { Form_2 } from "./component/form";
 
 export default function Home() {
   return (
@@ -19,6 +20,10 @@ export default function Home() {
       </div>
       <br></br>
       <Gallery />
+      <br></br>
+      <Form />
+      <br></br>
+      <Form_2 />
     </>
   );
 }

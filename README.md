@@ -134,3 +134,35 @@ With previous article button:
 ![Screenshot](assets/11.png)
 
 ![Screenshot](assets/12.png)
+
+## Practicum 5
+
+In this practicum, we have learnt about state structure to differentiate component and make error tracking easier. This practicum also discusses about state sharing with other components to understand the flow of the state. 
+
+Source code: 
+
+![Screenshot](assets/19.png)
+
+![Screenshot](assets/18.png)
+
+![Screenshot](assets/17.png)
+
+Output: 
+
+Correct answer: 
+
+![Screenshot](assets/15.png)
+
+![Screenshot](assets/14.png)
+
+Wrong answer: 
+
+![Screenshot](assets/13.png)
+
+Now let's dive into the output of form.tsx when we add Form_2
+
+![Screenshot](assets/16.png)
+
+In this class, we will add first name and full name of a person into the form. The difference lays in the source code. In the first version, there is a state called fullName in both setFirstName and setLastName function. This makes it redundant and prone to bugs. We will change the code that doesn't include the redundancy. 
+
+If we delete the fullName state, the code will be simpler and easier to understand. Furthermore, error tracking is easier in a much simpler code. The output of the code is similar to the previous code. 
